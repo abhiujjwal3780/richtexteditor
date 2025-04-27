@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ButtonWithIcon.css';
-import { svgCenterAlign, svgLeftAlign, svgOrderedList, svgRightAlign } from '../../../constants/constants';  
-import { svgUnorderedList } from '../../../constants/constants'; // Uncomment if you have an unordered list icon
+import { svgCenterAlign, svgLeftAlign, svgOrderedList, svgUnorderedList, svgRightAlign } from '../../../constants/svgImage';  
 
 const ButtonWithIcon = ({ type, onClick, isActive }) => {
     const renderIcon = () => {

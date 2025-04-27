@@ -1,10 +1,10 @@
 import React from 'react';
 import Dropdown from '../../../commonComponents/dropdown/Dropdown';
-import {fontOptions} from '../../../../constants/constants';
+import {fontOptions, SPAN} from '../../../../constants/constants';
 import { applyTagToSelection } from '../../../editor/EditorUtil';
 const FontColorDropdown = () => {
   const handleSelect = (option) => {
-    applyTagToSelection('span', { fontFamily: option.value});
+    applyTagToSelection(SPAN, { fontFamily: option.value});
   };
 
   return (

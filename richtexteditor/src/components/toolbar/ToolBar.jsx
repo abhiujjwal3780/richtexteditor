@@ -10,7 +10,7 @@ import FontSizeDropdown from './toolbarComponents/fontSizeDropdown/FontSizeDropd
 import ListButton from './toolbarComponents/listButton/ListButton';
 import AlignmentButton from './toolbarComponents/alignmentButton/AlignmentButton';
 import FontTypeDropdown from './toolbarComponents/fontTypeDropdown/FontTypeDropdown';
-
+import { ORDERDLIST, UNORDERDLIST , LEFT, CENTER, RIGHT } from '../../constants/constants';
 const ToolBar = ({ref}) => {
 
     return (
@@ -34,14 +34,14 @@ const ToolBar = ({ref}) => {
             </div>
             <div className="vertical-line"  ></div>
             <div className='tool-container'>
-                <ListButton type="ol" ref={ref}/>
-                <ListButton type="ul" ref={ref} />
+                <ListButton type={ORDERDLIST} ref={ref}/>
+                <ListButton type={UNORDERDLIST} ref={ref} />
             </div>
             <div className="vertical-line"  ></div>
             <div className='tool-container'>
-                <AlignmentButton type="left" />
-                <AlignmentButton type="center" />
-                <AlignmentButton type="right" />
+                <AlignmentButton type={LEFT} />
+                <AlignmentButton type={CENTER} />
+                <AlignmentButton type={RIGHT} />
             </div>
 
         </div>

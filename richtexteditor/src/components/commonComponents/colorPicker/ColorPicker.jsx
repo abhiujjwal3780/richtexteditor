@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './ColorPicker.css'; // Import the CSS file for styling
+import './ColorPicker.css';
 const SimpleColorPicker = ({color, onChange, isTextColor}) => {
-  const [currentColor, setColor] = useState(color); // Initial color set to black
+  const [currentColor, setColor] = useState(color);
 
   const handleColorChange = (e) => {
-    setColor(e.target.value);  // Update state with selected color
-    onChange(e.target.value);  // Call the onChange prop with the new color
+    setColor(e.target.value);
+    onChange(e.target.value);
   };
 
   return (
@@ -16,7 +16,7 @@ const SimpleColorPicker = ({color, onChange, isTextColor}) => {
       <input
         className="color-input"
         type="color"
-        value={currentColor}  // Show the selected color
+        value={currentColor}
         onChange={handleColorChange}
         placeholder='A'/>
 
