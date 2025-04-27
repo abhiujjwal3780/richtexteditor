@@ -17,6 +17,9 @@ export const INITIAL = 'initial';
 export const UNSET = 'unset';
 export const BOLD = 'bold';
 
+export const UNDO = 'undo';
+export const REDO = 'redo';
+
 export const UNORDERDLIST = 'ul';
 export const ORDERDLIST = 'ol';
 export const BLOCKQUOTE = 'blockquote';
@@ -34,6 +37,7 @@ export const SPAN = 'span';
 export const DIV = 'div';
 export const P = 'p';
 export const H1 = 'h1';     
+export const BOLDFONT ="700"
 
 export const DEFAULTFONTCOLOR = 'black';
 export const DEFAULTBACKGROUNDCOLOR = 'white';

@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './ButtonWithIcon.css';
-import { svgCenterAlign, svgLeftAlign, svgOrderedList, svgUnorderedList, svgRightAlign } from '../../../constants/svgImage';  
+import { svgCenterAlign, svgLeftAlign, svgOrderedList, svgUnorderedList, svgRightAlign, svgRedo, svgUndo } from '../../../constants/svgImage';  
 
 const ButtonWithIcon = ({ type, onClick, isActive }) => {
     const renderIcon = () => {
@@ -22,6 +21,10 @@ const ButtonWithIcon = ({ type, onClick, isActive }) => {
                 return svgCenterAlign;
             case 'rightAlign':
                 return svgRightAlign;
+            case 'undo':
+                return svgUndo;
+            case 'redo':
+                return svgRedo;
             
             default:
                 return null;

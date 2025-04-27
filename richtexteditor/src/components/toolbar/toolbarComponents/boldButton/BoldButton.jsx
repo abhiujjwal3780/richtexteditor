@@ -1,11 +1,15 @@
 import React from 'react';
 import ButtonWithIcon from '../../../commonComponents/buttonWithIcon/ButtonWithIcon';
 import { applyTagToSelection } from '../../../editor/EditorUtil';
-const BoldButton = () => {
-    const onClick = () => applyTagToSelection('span', { fontWeight: "700" });
+import { BOLD, SPAN, BOLDFONT } from '../../../../constants/constants';
+const BoldButton = ({saveState, ref}) => {
+    const onClick = () => {
+        saveState(ref.current);
+        applyTagToSelection(SPAN, { fontWeight: BOLDFONT })
+        };
     return (
         <ButtonWithIcon
-            type="bold"
+            type={BOLD}
             onClick={onClick}
             isActive={false}
         />
