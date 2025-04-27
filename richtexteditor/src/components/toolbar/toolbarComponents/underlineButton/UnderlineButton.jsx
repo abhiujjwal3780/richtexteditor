@@ -3,7 +3,7 @@ import ButtonWithIcon from '../../../commonComponents/buttonWithIcon/ButtonWithI
 import { applyTagToSelection } from '../../../editor/EditorUtil';
 import { UNDERLINE, SPAN } from '../../../../constants/constants';
 const UnderlineButton = () => {
-    const onClick = () => applyTagToSelection(SPAN, { textDeoration: UNDERLINE });
+    const onClick = () => applyTagToSelection(SPAN, { textDecoration: UNDERLINE });
     return (
         <ButtonWithIcon
             type={UNDERLINE}

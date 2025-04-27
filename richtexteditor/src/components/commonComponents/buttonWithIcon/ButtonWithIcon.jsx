@@ -38,12 +38,6 @@ const ButtonWithIcon = ({ type, onClick, isActive }) => {
     );
 };
 
-ButtonWithIcon.propTypes = {
-    type: PropTypes.oneOf(['bold', 'italic', 'underline']).isRequired,
-    onClick: PropTypes.func.isRequired,
-    isActive: PropTypes.bool,
-};
-
 ButtonWithIcon.defaultProps = {
     isActive: false,
 };

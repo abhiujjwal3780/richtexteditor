@@ -215,9 +215,16 @@ export const applyAlignment = (alignment) => {
     container = container.parentNode;
   }
 
+  while (container && window.getComputedStyle(container).display === 'inline') {
+    container = container.parentNode;
+  }
+
+  if (!container) return;
+
   if (container.style.textAlign === alignment) {
     container.style.textAlign = '';
   } else {
     container.style.textAlign = alignment;
   }
 };
+

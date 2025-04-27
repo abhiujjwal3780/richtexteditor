@@ -4,7 +4,7 @@ import SimpleColorPicker from '../../../commonComponents/colorPicker/ColorPicker
 import { COLOR, DEFAULTFONTCOLOR, SPAN } from '../../../../constants/constants';
 const FontColorDropdown = () => {
   const handleSelect = (color) => {
-    applyTagToSelection(SPAN, { color:COLOR});
+    applyTagToSelection(SPAN, { color:color});
   };
 
 return (

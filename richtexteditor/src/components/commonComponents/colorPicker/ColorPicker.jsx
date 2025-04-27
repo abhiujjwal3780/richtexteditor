@@ -7,11 +7,13 @@ const SimpleColorPicker = ({color, onChange, isTextColor}) => {
     setColor(e.target.value);
     onChange(e.target.value);
   };
-
+  const applyColor = () => {
+    onChange(currentColor);
+  }
   return (
     <div className="color-input-container" >
-        {isTextColor ? <label htmlFor="colorPicker" className="color-label" style={{color:currentColor}}>A</label>  :
-        <label htmlFor="colorPicker" className="color-label" style={{backgroundColor:currentColor, border:"1px solid black"}}>A</label>
+        {isTextColor ? <button onClick={applyColor} className="color-label" style={{color:currentColor}}>A</button>  :
+        <button onClick={applyColor} className="color-label" style={{backgroundColor:currentColor, border:"1px solid black"}}>A</button>
 }
       <input
         className="color-input"
