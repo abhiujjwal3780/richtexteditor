@@ -1,0 +1,30 @@
+.toolbar-container{
+    padding: 0.5rem;
+    background-color: white;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: fit-content;
+
+}
+.tool-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.vertical-line {
+    border-left: 1px solid #ccc;
+    height: 100%;
+    min-height: 1rem;
+}
+.extra-margin{
+    gap: 1rem;
+}
